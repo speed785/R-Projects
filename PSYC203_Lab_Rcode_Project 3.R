@@ -1,6 +1,6 @@
 # First, check working directory. then set working directory to the one you want:
 getwd()
-setwd("/Volumes/FLASHDRIVE/PSYC203_Spring_2019")  #remember to change backslashes to forward slashes or to double backslashes
+setwd("~/Desktop/R-Projects")  #remember to change backslashes to forward slashes or to double backslashes
 
 #install pacman package then use pacman p_load() with double colons '::' to install and load necessary packages:
 install.packages("pacman")
