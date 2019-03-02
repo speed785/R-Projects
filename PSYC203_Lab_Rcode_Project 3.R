@@ -18,6 +18,9 @@ LabSurvey$MajorRecode <- recode(LabSurvey$Major, 'Not Psychology Major or Minor'
 help(by)
 by(LabSurvey$MovieTrivia, LabSurvey$MajorRecode, stat.desc) #here we state we want the movie trivia variable to be grouped by major recode variable with stat.desc as the function
 
+help(by)
+by(LabSurvey$StatsEfficacy, LabSurvey$MajorRecode, stat.desc)
+
 
 
 ### For the second part of project three you must load in another data set, saved on Google classroom under the Data section as PROJ3.csv
@@ -51,3 +54,9 @@ plot(c(33.4, 37), main = "NON PSYC", xlab = "Exam", ylab = "Average Score")
 
 #Plot exam scores for Psyc:
 plot(c(34.4, 38.1), main = "PSYC", xlab = "Exam", ylab = "Average Score")
+
+#Plot exam scores for Non Psyc:
+barplot(c(33.4, 37), main = "NON PSYC", xlab = "Exam", ylab = "Average Score")
+
+#Plot exam scores for Psyc:
+barplot(c(34.4, 38.1), main = "PSYC", xlab = "Exam", ylab = "Average Score")
