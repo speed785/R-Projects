@@ -1,26 +1,29 @@
 #Packages installed: ggplot2, psych, Quantpysc
 
-#install pacman
-install.packages("pacman")
-pacman::p_load(dplyr)
-
+#Install then select by running library(...)
 install.packages("lm.beta")
-library(ggplot2)
 install.packages("ggplot2")
-library(lm.beta)
 install.packages("psych")
-library(psych)
 install.packages("QuantPsyc")
 library(QuantPsyc)
+library(psych)
+library(lm.beta)
+library(ggplot2)
 
-
+#########################
+##Questions and Answers##
+#########################
 #1.) Find equation line and write
 #   y = 98.24 + .109x
 #2.) Correlation (r) between house price & square feet
-
+#             x         y
+#     x 1.0000000 0.7621137
+#     y 0.7621137 1.0000000
 #3.) r^2 and adjusted r^2
-
+#   r^2 = 0.5808 & adjusted r^2 = 0.5284
 #4.) F statistic with p-value and df
+#   11.08 on 1 and 8 df , the p-value is 0.01039
+
 
 
 #create two vectors of scores
